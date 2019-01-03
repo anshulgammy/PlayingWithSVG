@@ -23,7 +23,7 @@ svgImageElement.addEventListener("load", function() {
     var pathList = svgDoc.getElementsByTagName("path");
     for(i=0; i< pathList.length; i++){
      pathList[i].addEventListener('click', function(){
-          alert(this.id);
+          alert(this.getAttribute('title'));
         });
 	 pathList[i].addEventListener('mouseenter', function(){
           this.setAttribute('style', 'fill:green');
