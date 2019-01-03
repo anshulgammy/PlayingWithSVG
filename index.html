@@ -17,22 +17,22 @@
 	Your browser doesn't support SVG
   </object>
 <script type="text/javascript">
-var svgImageElement = document.getElementById("svgObject");
-svgImageElement.addEventListener("load", function() {
-    var svgDoc = svgImageElement.contentDocument;
-    var pathList = svgDoc.getElementsByTagName("path");
-    for(i=0; i< pathList.length; i++){
-     pathList[i].addEventListener('click', function(){
-          alert(this.getAttribute('title'));
-        });
-	 pathList[i].addEventListener('mouseenter', function(){
-          this.setAttribute('style', 'fill:green');
-        });
-	 pathList[i].addEventListener('mouseleave', function(){
-          this.removeAttribute('style');
-        });
-    }
-});
+	var svgImageElement = document.getElementById("svgObject");
+	svgImageElement.addEventListener("load", function() {
+		var svgDoc = svgImageElement.contentDocument;
+		var pathList = svgDoc.getElementsByTagName("path");
+		for(i=0; i< pathList.length; i++){
+		 pathList[i].addEventListener('click', function(){
+			  alert(this.getAttribute('title'));
+			});
+		 pathList[i].addEventListener('mouseenter', function(){
+			  this.setAttribute('style', 'fill:green');
+			});
+		 pathList[i].addEventListener('mouseleave', function(){
+			  this.removeAttribute('style');
+			});
+		}
+	});
 </script>
 </body>
 </html>
