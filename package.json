@@ -1,0 +1,25 @@
+{
+  "name": "playingwithsvg",
+  "version": "1.0.0",
+  "description": "Identify Indian States with User Clicks on India's Map",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshulgammy/PlayingWithSVG.git"
+  },
+  "keywords": [
+    "Node",
+    "Anshul",
+    "Developer",
+    "SVG"
+  ],
+  "author": "Anshul Gautam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anshulgammy/PlayingWithSVG/issues"
+  },
+  "homepage": "https://github.com/anshulgammy/PlayingWithSVG#readme"
+}
