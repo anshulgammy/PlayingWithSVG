@@ -2,20 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechBrunch-Identify Indian States</title>
   <!-- CDN link for jquery -->
   <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
+  <style>
+	.svg-container {
+		width: 400px;
+		height: 400px;
+	 }
+  </style>
 </head>
 <body>
   <h1>Our India's Map</h1>
   <h2>Click on any State to know which state it is...</h2>
-  <!-- Embedded SVG Image here -->
-  <object id="svgObject" data="indiaHigh.svg" type="image/svg+xml" height="1000" width="700">
-	Your browser doesn't support SVG
-  </object>
+  <div class="svg-container">
+	  <!-- Embedded SVG Image here -->
+	  <object id="svgObject" data="indiaHigh.svg" type="image/svg+xml">
+		Your browser doesn't support SVG
+	  </object>
+  </div>
 <script type="text/javascript">
 	var svgImageElement = document.getElementById("svgObject");
 	svgImageElement.addEventListener("load", function() {
